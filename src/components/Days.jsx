@@ -43,10 +43,30 @@ const marketSchedule = [
 function Days(){
   return (
     <div>
-      <table class="table">
+      <style jsx>{`
+        table{
+
+          border: 1px solid black;
+        }
+        th{
+          border: 1px solid black;
+          background-color: #707070;
+        }
+
+        td{
+          border: 1px solid black;
+          background-color: #cecece
+        }
+        .center{
+          margin-left:auto;
+          margin-right:auto;
+        }
+      `}</style>
+
+    <table className="center">
         <thead>
           <tr>
-            <th>fdfdfdfdfdfd</th>
+            <th></th>
             <th>Sunday</th>
             <th>Monday</th>
             <th>Tuesday</th>
@@ -60,26 +80,26 @@ function Days(){
             <th>location</th>
             {marketSchedule.map((day, index) =>
               <td>
-              <Day location={day.location}
+                <Day location={day.location}
                 key={index}/>
               </td>
             )}
           </tr>
           <tr>
             <th>hours</th>
-            {marketSchedule.map((day, index) =>
+            {marketSchedule.map((day1, index1) =>
               <td>
-              <Day hours={day.hours}
-                key={index}/>
+                <Day hours={day1.hours}
+                key={index1}/>
               </td>
             )}
           </tr>
           <tr>
             <th>booth</th>
-            {marketSchedule.map((day, index) =>
+            {marketSchedule.map((day2, index2) =>
               <td>
-              <Day booth={day.booth}
-                key={index}/>
+                <Day booth={day2.booth}
+                key={index2}/>
               </td>
             )}
           </tr>

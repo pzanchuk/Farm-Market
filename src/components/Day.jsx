@@ -12,8 +12,8 @@ function Day(props){
 }
 
 Day.propTypes = {
-  location: PropTypes.string.isRequired,
-  hours: PropTypes.string.isRequired,
+  location: PropTypes.string,
+  hours: PropTypes.string,
   booth: PropTypes.string
 };
 

@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "16b6d30135bb4c8930f1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d18a40b7ef983b125928"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -42845,7 +42845,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Day__ = __webpack_require__("./src/components/Day.jsx");
 
 
-// import TicketList from "./TicketList";
 
 
 
@@ -42854,9 +42853,7 @@ function App() {
     "div",
     null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], null),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Days__["a" /* default */], null),
-    "// ",
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(TicketList, null)
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Days__["a" /* default */], null)
   );
 }
 

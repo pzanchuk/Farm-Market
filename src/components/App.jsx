@@ -1,15 +1,23 @@
 import React from "react";
 import Header from "./Header";
-import TicketList from "./TicketList";
 import Days from "./Days";
-import Day from "./Day";
+import Seasons from "./Seasons";
 
 function App(){
+
   return (
     <div>
+
+      <style jsx>{`
+        div{
+          text-align:center;
+        }
+      `}</style>
+
       <Header/>
       <Days/>
-      // <TicketList/>
+      <br/><br/>
+      <Seasons/>
     </div>
   );
 }
