@@ -79,27 +79,24 @@ function Days(){
           <tr>
             <th>location</th>
             {marketSchedule.map((day, index) =>
-              <td>
-                <Day location={day.location}
-                key={index}/>
+              <td key={index}>
+                {day.location}
               </td>
             )}
           </tr>
           <tr>
             <th>hours</th>
-            {marketSchedule.map((day1, index1) =>
-              <td>
-                <Day hours={day1.hours}
-                key={index1}/>
+            {marketSchedule.map((day1, index) =>
+              <td key={index}>
+                {day1.hours}
               </td>
             )}
           </tr>
           <tr>
             <th>booth</th>
-            {marketSchedule.map((day2, index2) =>
-              <td>
-                <Day booth={day2.booth}
-                key={index2}/>
+            {marketSchedule.map((day2, index) =>
+              <td key={index}>
+                {day2.booth}
               </td>
             )}
           </tr>

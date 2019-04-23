@@ -298,24 +298,27 @@ function Seasons(){
       `}</style>
 
     <table className="center">
+      <thead>
         <tr>
-            {availableProduce.map((element, index) =>
-              <th>
-                <Season month={element.month}
-                key={index}/>
-              </th>
-            )}
+          {availableProduce.map((element, index) =>
+          <th key={index}>
+          {element.month}
+          </th>
+          )}
         </tr>
+      </thead>
+      <tbody>
         <tr>
           {availableProduce.map((item, index) => (
-            <td>
-              <Season selection={item.selection.map((item, index) => (
-                  <span>{item}<br/></span>
-                ))}
-              />
+          <td key={index}>
+            <Season selection={item.selection.map((item, index) => (
+            <span key={index}>{item}<br/></span>
+            ))}
+            />
           </td>
           ))}
         </tr>
+      </tbody>
       </table>
     </div>
   );
